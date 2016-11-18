@@ -13,7 +13,7 @@ if [ -n $HOOKS_FOLDER ] && [ -d $HOOKS_FOLDER ] ; then
     exit 1
   else
     echo "Copying file..."
-    sudo cp commit-msg /usr/share/git-core/templates/hooks
+    sudo cp commit-msg $HOOKS_FOLDER/hooks
     echo "Done!"
     exit 0
   fi
